@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-hari",
+      "2": "I-hari",
+      "3": "L-hari",
+      "4": "U-hari",
+      "5": "B-jurusan",
+      "6": "I-jurusan",
+      "7": "L-jurusan",
+      "8": "U-jurusan",
+      "9": "B-kelas",
+      "10": "I-kelas",
+      "11": "L-kelas",
+      "12": "U-kelas",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-hari": 1,
+      "I-hari": 2,
+      "L-hari": 3,
+      "U-hari": 4,
+      "B-jurusan": 5,
+      "I-jurusan": 6,
+      "L-jurusan": 7,
+      "U-jurusan": 8,
+      "B-kelas": 9,
+      "I-kelas": 10,
+      "L-kelas": 11,
+      "U-kelas": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

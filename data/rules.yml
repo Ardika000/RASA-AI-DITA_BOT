@@ -1,0 +1,29 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+# - rule: tanya nis sebelum dapat jadwal
+#   steps:
+#   - intent: tanya_jadwal
+#   - action: simple_siswa_form
+#   - active_loop: simple_siswa_form
+
+# - rule: Submit nis untuk siswa form
+#   condition:
+#   - active_loop: simple_siswa_form
+#   steps:
+#   - action: simple_siswa_form
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+#   - action: action_get_jadwal

@@ -1,0 +1,110 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hai
+    - hay
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - siapakah kamu dita?
+    - kamu siapa?
+    - kamu itu apa?
+    - apa kamu bot?
+- intent: tanya_jadwal
+  examples: |
+    - Saya ingin tanya [jadwal](key_jadwal) hari [senin](hari) jurusan [TJKT](jurusan) kelas [12](kelas)
+    - Saya ingin tanya [jadwal](key_jadwal) hari [selasa](hari) jurusan [DKV](jurusan) kelas [12](kelas)
+    - Saya ingin tanya [jadwal](key_jadwal) hari [rabu](hari) jurusan [OTO](jurusan) kelas [11](kelas)
+    - Saya ingin tanya [jadwal](key_jadwal) hari [kamis](hari) jurusan [BCPF](jurusan) kelas [11](kelas)
+    - Saya ingin tanya [jadwal](key_jadwal) hari [jumat](hari) jurusan [TM](jurusan) kelas [10](kelas)
+    - Saya ingin tanya [jadwal](key_jadwal) hari [sabtu](hari) jurusan [LAS](jurusan) kelas [10](kelas)
+    - tanya [jadwal](key_jadwal) hari [senin](hari) jurusan [TJKT](jurusan) kelas [12](kelas)
+    - [jadwal](key_jadwal) jurusan [TM](jurusan) kelas [10](kelas) hari [selasa](hari)
+    - jurusan [oto](jurusan) kelas [11](kelas)
+    - kelas [11](kelas) jurusan [oto](jurusan)
+- intent: tanya_profil
+  examples: |
+    - Tanya [profil](key_profil) jurusan [tjkt](jurusan)
+    - [profil](key_profil) jurusan [OTO](jurusan)
+    - [profil](key_profil) jurusan [TM](jurusan)
+    - [profil](key_profil) jurusan [LAS](jurusan)
+    - [profil](key_profil) jurusan [DKV](jurusan)
+    - [profil](key_profil) jurusan [BCPF](jurusan)
+    - [profil](key_profil) jurusan [TAB](jurusan)
+    - [profil](key_profil) jurusan [TITL](jurusan)
+    - [profil](key_profil) jurusan [TOI](jurusan)
+- intent: tanya_mapel
+  examples: |
+    - saya ingin tanya [materi](key_mapel) yang dipelajari jurusan [OTO](jurusan)
+    - [materi](key_mapel) yang dipelajari jurusan [TJKT](jurusan)
+    - [materi](key_mapel) yang dipelajari jurusan [TOI](jurusan)
+    - [materi](key_mapel) yang dipelajari jurusan [TITL](jurusan)
+    - [materi](key_mapel) yang dipelajari jurusan [TM](jurusan)
+    - [materi](key_mapel) yang dipelajari jurusan [OTO](jurusan)
+    - [materi](key_mapel) yang dipelajari jurusan [DKV](jurusan)
+    - [materi](key_mapel) yang dipelajari jurusan [KA](jurusan)
+    - [materi](key_mapel) yang dipelajari jurusan [BCPF](jurusan)
+    - [materi](key_mapel) yang dipelajari jurusan [TAB](jurusan)
+    - [materi](key_mapel) yang dipelajari jurusan [LAS](jurusan)
+    - jurusan [oto](jurusan) [materi](key_mapel)nya apa?
+- intent: tanya_kerja
+  examples: |
+    - saya ingin tanya prospek [kerja](key_kerja) lulusan [LAS](jurusan)
+    - lulusan [OTO](jurusan) [kerja](key_kerja) apa?
+    - lulusan [TM](jurusan) [kerja](key_kerja) apa?
+    - lulusan [LAS](jurusan) [kerja](key_kerja) apa?
+    - lulusan [TJKT](jurusan) [kerja](key_kerja) apa?
+    - lulusan [DKV](jurusan) [kerja](key_kerja) apa?
+    - lulusan [BCPF](jurusan) [kerja](key_kerja) apa?
+    - lulusan [TAB](jurusan) [kerja](key_kerja) apa?
+    - lulusan [TITL](jurusan) [kerja](key_kerja) apa?
+    - lulusan [TOI](jurusan) [kerja](key_kerja) apa?
+    - lulusan [KA](jurusan) [kerja](key_kerja) apa?
+    - [kerja](key_kerja) lulusan [oto](jurusan) dimana?
+    - apa [kerja](key_kerja) sama tunas dengan lulusan [TITL](jurusan)
+- intent: tanya_profil_sekolah
+  examples: |
+    - profil sekolah smk tunas harapan pati?
+    - berikan profil smk tunas?
+    - apa profil smk tunas?
+    - profil sekolah
+- intent: tanya_produk
+  examples: |
+    - apa produk yang dihasilkan tunas?
+    - apa produk tunas?
+    - Produk teaching factory
+- intent: tanya_guru
+  examples: |
+    - siapa guru [matematika](materi) kelas [12](kelas) jurusan [tjkt](jurusan)
+    - siapakah guru [PAI](materi) kelas [11](kelas) jurusan [oto](jurusan)
+    - guru [PP](materi) kelas [11](kelas) jurusan [tjkts](jurusan)
+    - siapa guru [matematika](materi) kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}

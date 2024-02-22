@@ -1,0 +1,114 @@
+version: '3.1'
+intents:
+- affirm
+- bot_challenge
+- deny
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- tanya_guru
+- tanya_jadwal
+- tanya_jadwal_hari_auto
+- tanya_kerja
+- tanya_mapel
+- tanya_produk
+- tanya_profil
+- tanya_profil_sekolah
+entities:
+- jurusan
+- materi
+- kelas
+- hari
+- key_jadwal
+- key_profil
+- key_mapel
+- key_kerja
+slots:
+  hari:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: hari
+  jurusan:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: jurusan
+  kelas:
+    type: float
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: kelas
+  key_jadwal:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: key_jadwal
+  key_profil:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: key_profil
+  key_mapel:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: key_mapel
+  key_kerja:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: key_kerja
+  materi:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: materi
+responses:
+  utter_ask_nis:
+  - text: Boleh tolong masukkan nis nya kakak dulu!
+  utter_greet:
+  - text: Hay! ada yang bisa saya bantu?
+    buttons:
+    - title: Profil Sekolah
+      payload: /tanya_profil_sekolah
+    - title: Jadwal Sekolah
+      payload: /tanya_jadwal{{"key_jadwal":"jadwal"}}
+    - title: Kerjasama Industri & Prospek Kerja Lulusan
+      payload: /tanya_kerja{{"key_kerja":"kerja"}}
+    - title: Materi Yang Diajar Pada Jurusan
+      payload: /tanya_mapel{{"key_mapel":"materi"}}
+    - title: Produk Teaching Factory
+      payload: /tanya_produk
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: Saya adalah DITA(Assistent Digital Tunas Harapan Pati), saya akan membantu untuk menjawab pertanyaan yang kaka ajukan :)
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- action_get_guru
+- action_get_jadwal
+- action_get_profil
+- action_get_mapel
+- action_get_kerja
+- action_informasi_jadwal
+- action_profil_sekolah
+- action_produk_sekolah
