@@ -4491,7 +4491,7 @@ class ActionGetGuru(Action):
                 data= guru_dictionary.get(jurusan.upper(),{}).get(materi.lower(),{}).get(str(kelas))
                 dispatcher.utter_message(text=f"guru {materi} kelas {kelas} {jurusan} adalah {data}")
             else:
-                dispatcher.utter_message(text=f"Maaf kak sepertinya data yang kakak berikan kurang tepat,bisa ulangi lagi")
+                dispatcher.utter_message(text="Maaf kak sepertinya data yang kakak berikan kurang tepat,bisa ulangi lagi")
 
             return []
             
@@ -4562,24 +4562,6 @@ class ActionGetProfil(Action):
 
             return []
 
-class ActionGetMapel(Action):
-    def name(self) -> Text:
-        return "action_get_mapel"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-            jurusan = tracker.get_slot("jurusan")
-            key_mapel = tracker.get_slot("key_mapel")
-
-            if key_mapel and jurusan:
-                materi = data_dictionary.get(jurusan.upper(),{}).get(key_mapel.lower(),{})
-                dispatcher.utter_message(text="Baik kak, tunggu sebentar ya...")
-                dispatcher.utter_message(text=f"{materi}")
-            else:
-                dispatcher.utter_message(text=f"Tolong masukkan jurusannya ya kak :)")
-            return []
 
 class ActionGetKerja(Action):
     def name(self) -> Text:
@@ -4596,10 +4578,26 @@ class ActionGetKerja(Action):
                 kerja = data_dictionary.get(jurusan.upper(),{}).get(key_kerja.lower(),{})
                 dispatcher.utter_message(text="Baik kak, tunggu sebentar ya...")
                 dispatcher.utter_message(text=f"{kerja}")
-            elif jurusan:
-                kerja = data_dictionary.get(jurusan.upper(),{}).get("kerja",{})
+            else:
+                dispatcher.utter_message(text=f"Tolong masukkan jurusannya ya kak :)")
+            return []
+
+
+class ActionGetMapel(Action):
+    def name(self) -> Text:
+        return "action_get_mapel"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+            jurusan = tracker.get_slot("jurusan")
+            key_mapel = tracker.get_slot("key_mapel")
+
+            if key_mapel and jurusan:
+                materi = data_dictionary.get(jurusan.upper(),{}).get(key_mapel.lower(),{})
                 dispatcher.utter_message(text="Baik kak, tunggu sebentar ya...")
-                dispatcher.utter_message(text=f"{kerja}")
+                dispatcher.utter_message(text=f"{materi}")
             else:
                 dispatcher.utter_message(text=f"Tolong masukkan jurusannya ya kak :)")
             return []
