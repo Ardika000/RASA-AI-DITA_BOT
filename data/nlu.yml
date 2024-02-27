@@ -17,6 +17,13 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+- intent: terimakasih
+  examples: |
+    - terimakasih kak
+    - thank you kak
+    - thank you
+    - matursuwun
+    - terimakasih
 - intent: goodbye
   examples: |
     - cu
@@ -51,6 +58,7 @@ nlu:
     - [jadwal](key_jadwal) jurusan [TM](jurusan) kelas [10](kelas) hari [selasa](hari)
     - jurusan [oto](jurusan) kelas [11](kelas)
     - kelas [11](kelas) jurusan [oto](jurusan)
+    - kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
 - intent: tanya_profil
   examples: |
     - Tanya [profil](key_profil) jurusan [tjkt](jurusan)
@@ -62,6 +70,8 @@ nlu:
     - [profil](key_profil) jurusan [TAB](jurusan)
     - [profil](key_profil) jurusan [TITL](jurusan)
     - [profil](key_profil) jurusan [TOI](jurusan)
+    - jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
+    - jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
 - intent: tanya_mapel
   examples: |
     - saya ingin tanya [materi](key_mapel) yang dipelajari jurusan [OTO](jurusan)
@@ -108,3 +118,6 @@ nlu:
     - siapakah guru [PAI](materi) kelas [11](kelas) jurusan [oto](jurusan)
     - guru [PP](materi) kelas [11](kelas) jurusan [tjkts](jurusan)
     - siapa guru [matematika](materi) kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
+- synonym: TJKT
+  examples: |
+    - tjkt

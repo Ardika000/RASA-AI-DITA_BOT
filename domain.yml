@@ -15,15 +15,16 @@ intents:
 - tanya_produk
 - tanya_profil
 - tanya_profil_sekolah
+- terimakasih
 entities:
 - jurusan
-- materi
-- kelas
-- hari
-- key_jadwal
 - key_profil
-- key_mapel
 - key_kerja
+- kelas
+- key_jadwal
+- materi
+- hari
+- key_mapel
 slots:
   hari:
     type: text
@@ -74,6 +75,8 @@ slots:
     - type: from_entity
       entity: materi
 responses:
+  utter_terimakasih:
+  - text: Sama-sama kak, semoga membantu ya :)
   utter_ask_nis:
   - text: Boleh tolong masukkan nis nya kakak dulu!
   utter_greet:
@@ -87,6 +90,8 @@ responses:
       payload: /tanya_kerja{{"key_kerja":"kerja"}}
     - title: Materi Yang Diajar Pada Jurusan
       payload: /tanya_mapel{{"key_mapel":"materi"}}
+    - title: Profil Jurusan
+      payload: /tanya_profil{{ "key_profil":"profil" }}
     - title: Produk Teaching Factory
       payload: /tanya_produk
   utter_cheer_up:
@@ -104,11 +109,13 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 actions:
-- action_get_guru
-- action_get_jadwal
+- utter_terimakasih
 - action_get_profil
-- action_get_mapel
+- utter_greet
 - action_get_kerja
+- action_get_jadwal
+- action_get_guru
+- action_get_mapel
 - action_informasi_jadwal
 - action_profil_sekolah
 - action_produk_sekolah
