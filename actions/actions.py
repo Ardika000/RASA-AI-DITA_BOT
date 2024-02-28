@@ -4512,9 +4512,6 @@ class ActionGetJadwal(Action):
         set_locale_to_indonesian()
         hari_ini = datetime.now().strftime("%A").lower()
 
-        # siswa = tracker.get_slot("siswa")
-        # data_siswa = siswa_dictionary.get("nis",{})
-        # if siswa == data_siswa:
         if key_jadwal and hari and jurusan and kelas:
             jadwal_kelas = data_dictionary.get(jurusan.upper(),{}).get(key_jadwal.lower(),{}).get(str(kelas),{}).get(hari.lower(),{})
             if jadwal_kelas:
@@ -4523,21 +4520,22 @@ class ActionGetJadwal(Action):
                     pesan += f"Jam ke-{jam}: materi {info['materi']} dengan guru {info['guru']} di ruang {info['ruang']}\n"
                 dispatcher.utter_message(pesan)
             else:
-                dispatcher.utter_message("Maaf, jadwal tidak ditemukan untuk kriteria yang dimasukkan.")
+                dispatcher.utter_message("Kelas ini sedang libur kak :)")
         elif key_jadwal and jurusan and kelas:
             jadwal_hari_ini = data_dictionary.get(jurusan.upper()).get("jadwal",{}).get(str(kelas),{}).get(hari_ini.lower(),{})
 
-            message=f"DITA kasih tau ya kak jadwal hari ini kelas {kelas} jurusan {jurusan} yaitu:\n"
-            for jam, info in jadwal_hari_ini.items():
-                materi = info.get('materi','')
-                guru = info.get('guru', '')
-                ruang = info.get('ruang', '')
-                message += f"Jam {jam}: materi {materi},guru {guru},ruang {ruang}\n"
-            dispatcher.utter_message(text=message)
+            if jadwal_hari_ini:
+                message=f"DITA kasih tau ya kak jadwal hari ini kelas {kelas} jurusan {jurusan} yaitu:\n"
+                for jam, info in jadwal_hari_ini.items():
+                    materi = info.get('materi','')
+                    guru = info.get('guru', '')
+                    ruang = info.get('ruang', '')
+                    message += f"Jam {jam}: materi {materi},guru {guru},ruang {ruang}\n"
+                dispatcher.utter_message(text=message)
+            else:
+                dispatcher.utter_message(text="kelas tersebut sedang libur kak :)")
         else:
-            dispatcher.utter_message("Tolong masukkan kelas dan jurusannya ya kak :)")
-        # else:
-        #     dispatcher.utter_message(text="Tolong dicek lagi kak nis-nya karna DITA tidak bisa menemukannya")
+            dispatcher.utter_message(text="tolong masukkan kelas dan jurusannya ya kak :)")
         return []
 
 class ActionGetProfil(Action):
