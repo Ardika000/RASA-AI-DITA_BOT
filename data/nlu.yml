@@ -4,6 +4,7 @@ nlu:
   examples: |
     - hey
     - hello
+    - halo
     - hi
     - hai
     - hay
@@ -24,6 +25,10 @@ nlu:
     - thank you
     - matursuwun
     - terimakasih
+- intent: konfirmasi
+  examples: |
+    - ada
+    - ya
 - intent: goodbye
   examples: |
     - cu

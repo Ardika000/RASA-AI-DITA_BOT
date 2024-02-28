@@ -167,3 +167,10 @@ stories:
   - action: action_get_profil
   - intent: terimakasih
   - action: utter_terimakasih
+
+- story: basa basi
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: konfirmasi
+  - action: utter_tanya_perlu

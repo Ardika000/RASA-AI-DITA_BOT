@@ -16,6 +16,7 @@ intents:
 - tanya_profil
 - tanya_profil_sekolah
 - terimakasih
+- konfirmasi
 entities:
 - jurusan
 - key_profil
@@ -103,6 +104,8 @@ responses:
   - text: Great, carry on!
   utter_goodbye:
   - text: Bye
+  utter_tanya_perlu:
+  - text: Apa yang diperlukan ya kak?
   utter_iamabot:
   - text: Saya adalah DITA(Assistent Digital Tunas Harapan Pati), saya akan membantu untuk menjawab pertanyaan yang kaka ajukan :)
 session_config:
