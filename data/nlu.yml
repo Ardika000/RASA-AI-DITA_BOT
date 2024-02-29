@@ -61,49 +61,51 @@ nlu:
     - Saya ingin tanya [jadwal](key_jadwal) hari [sabtu](hari) jurusan [LAS](jurusan) kelas [10](kelas)
     - tanya [jadwal](key_jadwal) hari [senin](hari) jurusan [TJKT](jurusan) kelas [12](kelas)
     - [jadwal](key_jadwal) jurusan [TM](jurusan) kelas [10](kelas) hari [selasa](hari)
+    - [jadwal](key_jadwal) jurusan [KA](jurusan) kelas [10](kelas) hari [selasa](hari)
     - jurusan [oto](jurusan) kelas [11](kelas)
     - kelas [11](kelas) jurusan [oto](jurusan)
     - kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
 - intent: tanya_profil
   examples: |
     - Tanya [profil](key_profil) jurusan [tjkt](jurusan)
-    - [profil](key_profil) jurusan [OTO](jurusan)
-    - [profil](key_profil) jurusan [TM](jurusan)
-    - [profil](key_profil) jurusan [LAS](jurusan)
-    - [profil](key_profil) jurusan [DKV](jurusan)
-    - [profil](key_profil) jurusan [BCPF](jurusan)
-    - [profil](key_profil) jurusan [TAB](jurusan)
-    - [profil](key_profil) jurusan [TITL](jurusan)
-    - [profil](key_profil) jurusan [TOI](jurusan)
+    - [profil](key_profil) jurusan [OTO](jurusan) (Otomotif)
+    - [profil](key_profil) jurusan [KA](jurusan) (Kimia Analis)
+    - [profil](key_profil) jurusan [TM](jurusan) (Teknik Mesin)
+    - [profil](key_profil) jurusan [LAS](jurusan) (Teknik Las)
+    - [profil](key_profil) jurusan [DKV](jurusan) (Desain Komunikasi Visual)
+    - [profil](key_profil) jurusan [BCPF](jurusan) (Broadcasting TV dan Perfilman)
+    - [profil](key_profil) jurusan [TAB](jurusan) (Teknik Alat Berat)
+    - [profil](key_profil) jurusan [TITL](jurusan) (Teknik Instalasi Tenaga Listrik)
+    - [profil](key_profil) jurusan [TOI](jurusan) (Teknik Otomasi Industri)
     - jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
     - jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
 - intent: tanya_mapel
   examples: |
     - saya ingin tanya [materi](key_mapel) yang dipelajari jurusan [OTO](jurusan)
-    - [materi](key_mapel) yang dipelajari jurusan [TJKT](jurusan)
-    - [materi](key_mapel) yang dipelajari jurusan [TOI](jurusan)
-    - [materi](key_mapel) yang dipelajari jurusan [TITL](jurusan)
-    - [materi](key_mapel) yang dipelajari jurusan [TM](jurusan)
-    - [materi](key_mapel) yang dipelajari jurusan [OTO](jurusan)
-    - [materi](key_mapel) yang dipelajari jurusan [DKV](jurusan)
-    - [materi](key_mapel) yang dipelajari jurusan [KA](jurusan)
-    - [materi](key_mapel) yang dipelajari jurusan [BCPF](jurusan)
-    - [materi](key_mapel) yang dipelajari jurusan [TAB](jurusan)
-    - [materi](key_mapel) yang dipelajari jurusan [LAS](jurusan)
+    - [materi](key_mapel) yang dipelajari jurusan [TJKT](jurusan) (Teknik Jaringan Komputer dan Telekomunikasi)
+    - [materi](key_mapel) yang dipelajari jurusan [TOI](jurusan) (Teknik Otomasi Industri)
+    - [materi](key_mapel) yang dipelajari jurusan [TITL](jurusan) (Teknik Instalasi Tenaga Listrik)
+    - [materi](key_mapel) yang dipelajari jurusan [TM](jurusan) (Teknik Mesin)
+    - [materi](key_mapel) yang dipelajari jurusan [OTO](jurusan) (Otomotif)
+    - [materi](key_mapel) yang dipelajari jurusan [DKV](jurusan) (Desain Komunikasi Visual)
+    - [materi](key_mapel) yang dipelajari jurusan [KA](jurusan) (Kimia Analis)
+    - [materi](key_mapel) yang dipelajari jurusan [BCPF](jurusan) (Broadcasting TV dan Perfilman)
+    - [materi](key_mapel) yang dipelajari jurusan [TAB](jurusan) (Teknik Alat Berat)
+    - [materi](key_mapel) yang dipelajari jurusan [LAS](jurusan) (Teknik Las)
     - jurusan [oto](jurusan) [materi](key_mapel)nya apa?
 - intent: tanya_kerja
   examples: |
     - saya ingin tanya prospek [kerja](key_kerja) lulusan [LAS](jurusan)
-    - lulusan [OTO](jurusan) [kerja](key_kerja) apa?
-    - lulusan [TM](jurusan) [kerja](key_kerja) apa?
-    - lulusan [LAS](jurusan) [kerja](key_kerja) apa?
-    - lulusan [TJKT](jurusan) [kerja](key_kerja) apa?
-    - lulusan [DKV](jurusan) [kerja](key_kerja) apa?
-    - lulusan [BCPF](jurusan) [kerja](key_kerja) apa?
-    - lulusan [TAB](jurusan) [kerja](key_kerja) apa?
-    - lulusan [TITL](jurusan) [kerja](key_kerja) apa?
-    - lulusan [TOI](jurusan) [kerja](key_kerja) apa?
-    - lulusan [KA](jurusan) [kerja](key_kerja) apa?
+    - lulusan [OTO](jurusan) (Otomotif) [kerja](key_kerja) apa?
+    - lulusan [TM](jurusan) (Teknik Mesin) [kerja](key_kerja) apa?
+    - lulusan [LAS](jurusan) (Teknik Las) [kerja](key_kerja) apa?
+    - lulusan [TJKT](jurusan) (Teknik Jaringan Komputer dan Telekomunikasi)  [kerja](key_kerja) apa?
+    - lulusan [DKV](jurusan) (Desain Komunikasi Visual) [kerja](key_kerja) apa?
+    - lulusan [BCPF](jurusan) (Broadcasting TV dan Perfilman) [kerja](key_kerja) apa?
+    - lulusan [TAB](jurusan) (Teknik Alat Berat) [kerja](key_kerja) apa?
+    - lulusan [TITL](jurusan) (Teknik Instalasi Tenaga Listrik) [kerja](key_kerja) apa?
+    - lulusan [TOI](jurusan) (Teknik Otomasi Industri) [kerja](key_kerja) apa?
+    - lulusan [KA](jurusan) (Kimia Analis) [kerja](key_kerja) apa?
     - [kerja](key_kerja) lulusan [oto](jurusan) dimana?
     - apa [kerja](key_kerja) sama tunas dengan lulusan [TITL](jurusan)
 - intent: tanya_profil_sekolah
