@@ -78,7 +78,6 @@ nlu:
     - [profil](key_profil) jurusan [TITL](jurusan) (Teknik Instalasi Tenaga Listrik)
     - [profil](key_profil) jurusan [TOI](jurusan) (Teknik Otomasi Industri)
     - jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
-    - jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
 - intent: tanya_mapel
   examples: |
     - saya ingin tanya [materi](key_mapel) yang dipelajari jurusan [OTO](jurusan)
@@ -132,6 +131,8 @@ nlu:
     - guru [PKK](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
     - guru [DTJKT](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
     - siapa guru [matematika](materi) kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
+    - siapa guru [matematika](materi) kelas [12](kelas)
+    - guru [b.inggris]{"entity": "materi", "value": "B.Inggris"} kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
 - synonym: TJKT
   examples: |
     - tjkt

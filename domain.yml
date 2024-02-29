@@ -5,6 +5,7 @@ intents:
 - deny
 - goodbye
 - greet
+- konfirmasi
 - mood_great
 - mood_unhappy
 - tanya_guru
@@ -16,14 +17,13 @@ intents:
 - tanya_profil
 - tanya_profil_sekolah
 - terimakasih
-- konfirmasi
 entities:
+- kelas
 - jurusan
+- materi
 - key_profil
 - key_kerja
-- kelas
 - key_jadwal
-- materi
 - hari
 - key_mapel
 slots:
@@ -107,17 +107,17 @@ responses:
   utter_tanya_perlu:
   - text: Apa yang diperlukan ya kak?
   utter_iamabot:
-  - text: Saya adalah DITA(Assistent Digital Tunas Harapan Pati), saya akan membantu untuk menjawab pertanyaan yang kaka ajukan :)
+  - text: Saya adalah DITA(Assistent Digital Tunas Harapan Pati), saya akan membantu untuk menjawab pertanyaan yang kakak ajukan :)
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 actions:
+- utter_greet
+- action_get_guru
 - utter_terimakasih
 - action_get_profil
-- utter_greet
 - action_get_kerja
 - action_get_jadwal
-- action_get_guru
 - action_get_mapel
 - action_informasi_jadwal
 - action_profil_sekolah

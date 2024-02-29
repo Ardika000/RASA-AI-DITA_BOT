@@ -63,7 +63,7 @@ guru_dictionary={
         "b.inggris":{
             "10":"Mam Jelisha",
             "11":"Mam Jelisha",
-            "12":"Mam Kriss",
+            "12":"Mam Kris",
         },
         "pp":{
             "10":"Mam Wuri",
@@ -109,7 +109,7 @@ guru_dictionary={
         "b.inggris":{
             "10":"Mam Jelisha",
             "11":"Mam Jelisha",
-            "12":"Mam Kriss",
+            "12":"Mam Kris",
         },
         "pp":{
             "10":"Mam Wuri",
@@ -155,7 +155,7 @@ guru_dictionary={
         "b.inggris":{
             "10":"Mam Jelisha",
             "11":"Mam Jelisha",
-            "12":"Mam Kriss",
+            "12":"Mam Kris",
         },
         "pp":{
             "10":"Mam Wuri",
@@ -201,7 +201,7 @@ guru_dictionary={
         "b.inggris":{
             "10":"Mam Jelisha",
             "11":"Mam Jelisha",
-            "12":"Mam Kriss",
+            "12":"Mam Kris",
         },
         "pp":{
             "10":"Mam Wuri",
@@ -247,7 +247,7 @@ guru_dictionary={
         "b.inggris":{
             "10":"Mam Jelisha",
             "11":"Mam Jelisha",
-            "12":"Mam Kriss",
+            "12":"Mam Kris",
         },
         "pp":{
             "10":"Mam Wuri",
@@ -293,7 +293,7 @@ guru_dictionary={
         "b.inggris":{
             "10":"Mam Jelisha",
             "11":"Mam Jelisha",
-            "12":"Mam Kriss",
+            "12":"Mam Kris",
         },
         "pp":{
             "10":"Mam Wuri",
@@ -4726,8 +4726,7 @@ class ActionGetGuru(Action):
             elif not materi:
                 dispatcher.utter_message(text=f"tolong masukkan materi yang diajar guru tersebut ya kak :)")
             else:
-                dispatcher.utter_message(text=f"Di Kelas itu tidak ada pelajaran {materi} kak")
-
+                dispatcher.utter_message(text=f"Tolong masukkan lagi materi yang diajar kelas dan jurusannya juga ya kak :)")
             return []
             
 

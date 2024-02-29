@@ -2,56 +2,6 @@ version: "3.1"
 
 stories:
 
-# - story: menanyakan jadwal
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: tanya_jadwal
-#     entities:
-#     - hari: senin
-#     - jurusan: TJKT
-#     - kelas: 12
-#     - key_jadwal: jadwal
-#   - action: action_get_jadwal
-#   - intent: terimakasih
-#   - action: utter_terimakasih
-
-# - story: menanyakan profil
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: tanya_profil
-#     entities:
-#     - key_profil: profil
-#     - jurusan: OTO
-#   - action: action_get_profil
-#   - intent: terimakasih
-#   - action: utter_terimakasih
-
-# - story: menanyakan mapel
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: tanya_mapel
-#     entities:
-#     - key_mapel: materi
-#     - jurusan: TM
-#   - action: action_get_mapel
-#   - intent: terimakasih
-#   - action: utter_terimakasih
-  
-# - story: menanyakan kerja
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: tanya_kerja
-#     entities:
-#     - key_kerja: kerja
-#     - jurusan: TM
-#   - action: action_get_kerja
-#   - intent: terimakasih
-#   - action: utter_terimakasih
-
 - story: tanya profil sekolah
   steps:
   - intent: greet
@@ -65,30 +15,6 @@ stories:
   - action: utter_greet
   - intent: tanya_produk
   - action: action_produk_sekolah
-
-# - story: tanya guru
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: tanya_guru
-#   - action: action_get_guru
-
-- story: interactive_tanya_guru
-  steps:
-  - intent: tanya_guru
-    entities:
-    - materi: matematika
-    - kelas: '12'
-    - jurusan: TJKT
-  - slot_was_set:
-    - jurusan: TJKT
-  - slot_was_set:
-    - kelas: '12'
-  - slot_was_set:
-    - materi: matematika
-  - action: action_get_guru
-  - intent: terimakasih
-  - action: utter_terimakasih
 
 - story: interactive_story_jadwal
   steps:
@@ -176,3 +102,29 @@ stories:
   - action: utter_greet
   - intent: konfirmasi
   - action: utter_tanya_perlu
+
+- story: interactive_story_guru
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tanya_guru
+    entities:
+    - materi: matematika
+    - kelas: '12'
+  - slot_was_set:
+    - kelas: '12'
+  - slot_was_set:
+    - materi: matematika
+  - action: action_get_guru
+  - intent: tanya_guru
+    entities:
+    - materi: B.Inggris
+    - kelas: '12'
+    - jurusan: TJKT
+  - slot_was_set:
+    - jurusan: TJKT
+  - slot_was_set:
+    - kelas: '12'
+  - slot_was_set:
+    - materi: B.Inggris
+  - action: action_get_guru
