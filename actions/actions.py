@@ -22,29 +22,6 @@ def set_locale_to_indonesian():
     except locale.Error:
         locale.setlocale(locale.LC_TIME, "id_ID")
 
-# siswa_dictionary={
-#     "nis":{
-#         "17843":{
-#             "nama":"Ardika Hidayatur Rohman",
-#             "kelas":"12",
-#             "jurusan":"TJKT"
-#             },
-#         "12889":{
-#             "nama":"Ahmad",
-#             "kelas":"10",
-#             "jurusan":"KA"
-#         },
-#         "17823":{
-#             "nama":"Rohid",
-#             "kelas":"11",
-#             "jurusan":"OTO"
-#         },
-#         "12832":{"nama":"Ryan","kelas":"10","jurusan":"DKV"},
-#         "17893":{"nama":"Andre","kelas":"12","jurusan":"LAS"},
-#         "18536":{"nama":"Reza","kelas":"12","jurusan":"TM"}
-#     }
-# }
-
 guru_dictionary={
     "guru":{
         "TJKT":{
