@@ -25,6 +25,7 @@ nlu:
     - thank you
     - matursuwun
     - terimakasih
+    - terima kasih
 - intent: konfirmasi
   examples: |
     - ada
@@ -120,19 +121,24 @@ nlu:
     - Produk teaching factory
 - intent: tanya_guru
   examples: |
-    - siapa guru [matematika](materi) kelas [12](kelas) jurusan [tjkt](jurusan)
-    - siapakah guru [PAI](materi) kelas [11](kelas) jurusan [oto](jurusan)
-    - guru [PP](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
-    - guru [B.indonesia](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
-    - guru [B.Jawa](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
-    - guru [B.Inggris](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
-    - guru [Olahraga](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
-    - guru [IPAS](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
-    - guru [PKK](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
-    - guru [DTJKT](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
-    - siapa guru [matematika](materi) kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
-    - siapa guru [matematika](materi) kelas [12](kelas)
-    - guru [b.inggris]{"entity": "materi", "value": "B.Inggris"} kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
+    - siapa [guru](key_guru) [matematika](materi) kelas [12](kelas) jurusan [tjkt](jurusan)
+    - siapakah [guru](key_guru) [PAI](materi) kelas [11](kelas) jurusan [oto](jurusan)
+    - [guru](key_guru) [PP](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - [guru](key_guru) [B.indonesia](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - [guru](key_guru) [B.Jawa](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - [guru](key_guru) [B.Inggris](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - [guru](key_guru) [Olahraga](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - [guru](key_guru) [IPAS](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - [guru](key_guru) [PKK](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - [guru](key_guru) [DTJKT](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - siapa [guru](key_guru) [matematika](materi) kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
+    - siapa [guru](key_guru) [matematika](materi) kelas [12](kelas)
+    - [guru](key_guru) [b.inggris]{"entity": "materi", "value": "B.Inggris"} kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
+    - siapa [guru](key_guru) kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
+    - [B.Jawa](materi)
 - synonym: TJKT
   examples: |
     - tjkt
+- synonym: B.Inggris
+  examples: |
+    - b.inggris

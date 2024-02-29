@@ -18,14 +18,15 @@ intents:
 - tanya_profil_sekolah
 - terimakasih
 entities:
-- kelas
 - jurusan
 - materi
+- kelas
 - key_profil
 - key_kerja
 - key_jadwal
 - hari
 - key_mapel
+- key_guru
 slots:
   hari:
     type: text
@@ -69,6 +70,12 @@ slots:
     mappings:
     - type: from_entity
       entity: key_kerja
+  key_guru:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: key_guru
   materi:
     type: text
     influence_conversation: true

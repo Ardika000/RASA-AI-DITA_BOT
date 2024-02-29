@@ -46,280 +46,283 @@ def set_locale_to_indonesian():
 # }
 
 guru_dictionary={
-    "TJKT":{
-        "matematika":{
-            "10":"Mam Wahyu",
-            "11":"Mam Santi",
-            "12":"Mam Diah"
+    "guru":{
+        "TJKT":{
+            "matematika":{
+                "10":"Mam Wahyu",
+                "11":"Mam Santi",
+                "12":"Mam Diah"
+            },
+            "b.indonesia":{
+                "10":"Pak Ario",
+                "11":"Mam Dhita",
+                "12":"Pak Ario"
+            },
+            "b.jawa":{
+                "10":"Mam Erna"
+            },
+            "b.inggris":{
+                "10":"Mam Jelisha",
+                "11":"Mam Jelisha",
+                "12":"Mam Kris",
+            },
+            "pp":{
+                "10":"Mam Wuri",
+                "11":"Pak Erwin",
+                "12":"Pak Luhur"
+            },
+            "pai":{
+                "10":"Pak Slamet",
+                "11":"Pak Slamet",
+                "12":"Pak Marno"
+            },
+            "ipas":{
+                "10":"Pak Sigid"
+            },
+            "dtjkt":{
+                "10":"Pak Slamet"
+            },
+            "pkk":{
+                "11":"Mam Linda",
+                "12":"Mam Cantika"
+            },
+            "olahraga":{
+                "10":"Pak Suparno",
+                "11":"Pak Gatot",
+                "12":"Pak Adi"
+            }
+
         },
-        "b.indonesia":{
-            "10":"Pak Ario",
-            "11":"Mam Dhita",
-            "12":"Pak Ario"
+        "KA":{
+            "matematika":{
+                "10":"Mam Wahyu",
+                "11":"Mam Santi",
+                "12":"Mam Diah"
+            },
+            "b.indonesia":{
+                "10":"Pak Ario",
+                "11":"Mam Dhita",
+                "12":"Pak Ario"
+            },
+            "b.jawa":{
+                "10":"Mam Erna"
+            },
+            "b.inggris":{
+                "10":"Mam Jelisha",
+                "11":"Mam Jelisha",
+                "12":"Mam Kris",
+            },
+            "pp":{
+                "10":"Mam Wuri",
+                "11":"Pak Erwin",
+                "12":"Pak Luhur"
+            },
+            "pai":{
+                "10":"Pak Slamet",
+                "11":"Pak Slamet",
+                "12":"Pak Marno"
+            },
+            "ipas":{
+                "10":"Pak Sigid"
+            },
+            "dtjkt":{
+                "10":"Pak Slamet"
+            },
+            "pkk":{
+                "11":"Mam Linda",
+                "12":"Mam Cantika"
+            },
+            "olahraga":{
+                "10":"Pak Suparno",
+                "11":"Pak Gatot",
+                "12":"Pak Adi"
+            }
+
         },
-        "b.jawa":{
-            "10":"Mam Erna"
+        "DKV":{
+            "matematika":{
+                "10":"Mam Wahyu",
+                "11":"Mam Santi",
+                "12":"Mam Diah"
+            },
+            "b.indonesia":{
+                "10":"Pak Ario",
+                "11":"Mam Dhita",
+                "12":"Pak Ario"
+            },
+            "b.jawa":{
+                "10":"Mam Erna"
+            },
+            "b.inggris":{
+                "10":"Mam Jelisha",
+                "11":"Mam Jelisha",
+                "12":"Mam Kris",
+            },
+            "pp":{
+                "10":"Mam Wuri",
+                "11":"Pak Erwin",
+                "12":"Pak Luhur"
+            },
+            "pai":{
+                "10":"Pak Slamet",
+                "11":"Pak Slamet",
+                "12":"Pak Marno"
+            },
+            "ipas":{
+                "10":"Pak Sigid"
+            },
+            "dtjkt":{
+                "10":"Pak Slamet"
+            },
+            "pkk":{
+                "11":"Mam Linda",
+                "12":"Mam Cantika"
+            },
+            "olahraga":{
+                "10":"Pak Suparno",
+                "11":"Pak Gatot",
+                "12":"Pak Adi"
+            }
+
         },
-        "b.inggris":{
-            "10":"Mam Jelisha",
-            "11":"Mam Jelisha",
-            "12":"Mam Kris",
+        "OTO":{
+            "matematika":{
+                "10":"Mam Wahyu",
+                "11":"Mam Santi",
+                "12":"Mam Diah"
+            },
+            "b.indonesia":{
+                "10":"Pak Ario",
+                "11":"Mam Dhita",
+                "12":"Pak Ario"
+            },
+            "b.jawa":{
+                "10":"Mam Erna"
+            },
+            "b.inggris":{
+                "10":"Mam Jelisha",
+                "11":"Mam Jelisha",
+                "12":"Mam Kris",
+            },
+            "pp":{
+                "10":"Mam Wuri",
+                "11":"Pak Erwin",
+                "12":"Pak Luhur"
+            },
+            "pai":{
+                "10":"Pak Slamet",
+                "11":"Pak Slamet",
+                "12":"Pak Marno"
+            },
+            "ipas":{
+                "10":"Pak Sigid"
+            },
+            "dtjkt":{
+                "10":"Pak Slamet"
+            },
+            "pkk":{
+                "11":"Mam Linda",
+                "12":"Mam Cantika"
+            },
+            "olahraga":{
+                "10":"Pak Suparno",
+                "11":"Pak Gatot",
+                "12":"Pak Adi"
+            }
+
         },
-        "pp":{
-            "10":"Mam Wuri",
-            "11":"Pak Erwin",
-            "12":"Pak Luhur"
+        "TM":{
+            "matematika":{
+                "10":"Mam Wahyu",
+                "11":"Mam Santi",
+                "12":"Mam Diah"
+            },
+            "b.indonesia":{
+                "10":"Pak Ario",
+                "11":"Mam Dhita",
+                "12":"Pak Ario"
+            },
+            "b.jawa":{
+                "10":"Mam Erna"
+            },
+            "b.inggris":{
+                "10":"Mam Jelisha",
+                "11":"Mam Jelisha",
+                "12":"Mam Kris",
+            },
+            "pp":{
+                "10":"Mam Wuri",
+                "11":"Pak Erwin",
+                "12":"Pak Luhur"
+            },
+            "pai":{
+                "10":"Pak Slamet",
+                "11":"Pak Slamet",
+                "12":"Pak Marno"
+            },
+            "ipas":{
+                "10":"Pak Sigid"
+            },
+            "dtjkt":{
+                "10":"Pak Slamet"
+            },
+            "pkk":{
+                "11":"Mam Linda",
+                "12":"Mam Cantika"
+            },
+            "olahraga":{
+                "10":"Pak Suparno",
+                "11":"Pak Gatot",
+                "12":"Pak Adi"
+            }
+
         },
-        "pai":{
-            "10":"Pak Slamet",
-            "11":"Pak Slamet",
-            "12":"Pak Marno"
-        },
-        "ipas":{
-            "10":"Pak Sigid"
-        },
-        "dtjkt":{
-            "10":"Pak Slamet"
-        },
-        "pkk":{
-            "11":"Mam Linda",
-            "12":"Mam Cantika"
-        },
-        "olahraga":{
-            "10":"Pak Suparno",
-            "11":"Pak Gatot",
-            "12":"Pak Adi"
+        "LAS":{
+            "matematika":{
+                "10":"Mam Wahyu",
+                "11":"Mam Santi",
+                "12":"Mam Diah"
+            },
+            "b.indonesia":{
+                "10":"Pak Ario",
+                "11":"Mam Dhita",
+                "12":"Pak Ario"
+            },
+            "b.jawa":{
+                "10":"Mam Erna"
+            },
+            "b.inggris":{
+                "10":"Mam Jelisha",
+                "11":"Mam Jelisha",
+                "12":"Mam Kris",
+            },
+            "pp":{
+                "10":"Mam Wuri",
+                "11":"Pak Erwin",
+                "12":"Pak Luhur"
+            },
+            "pai":{
+                "10":"Pak Slamet",
+                "11":"Pak Slamet",
+                "12":"Pak Marno"
+            },
+            "ipas":{
+                "10":"Pak Sigid"
+            },
+            "dtjkt":{
+                "10":"Pak Slamet"
+            },
+            "pkk":{
+                "11":"Mam Linda",
+                "12":"Mam Cantika"
+            },
+            "olahraga":{
+                "10":"Pak Suparno",
+                "11":"Pak Gatot",
+                "12":"Pak Adi"
+            }
         }
 
-    },
-    "KA":{
-        "matematika":{
-            "10":"Mam Wahyu",
-            "11":"Mam Santi",
-            "12":"Mam Diah"
-        },
-        "b.indonesia":{
-            "10":"Pak Ario",
-            "11":"Mam Dhita",
-            "12":"Pak Ario"
-        },
-        "b.jawa":{
-            "10":"Mam Erna"
-        },
-        "b.inggris":{
-            "10":"Mam Jelisha",
-            "11":"Mam Jelisha",
-            "12":"Mam Kris",
-        },
-        "pp":{
-            "10":"Mam Wuri",
-            "11":"Pak Erwin",
-            "12":"Pak Luhur"
-        },
-        "pai":{
-            "10":"Pak Slamet",
-            "11":"Pak Slamet",
-            "12":"Pak Marno"
-        },
-        "ipas":{
-            "10":"Pak Sigid"
-        },
-        "dtjkt":{
-            "10":"Pak Slamet"
-        },
-        "pkk":{
-            "11":"Mam Linda",
-            "12":"Mam Cantika"
-        },
-        "olahraga":{
-            "10":"Pak Suparno",
-            "11":"Pak Gatot",
-            "12":"Pak Adi"
-        }
-
-    },
-    "DKV":{
-        "matematika":{
-            "10":"Mam Wahyu",
-            "11":"Mam Santi",
-            "12":"Mam Diah"
-        },
-        "b.indonesia":{
-            "10":"Pak Ario",
-            "11":"Mam Dhita",
-            "12":"Pak Ario"
-        },
-        "b.jawa":{
-            "10":"Mam Erna"
-        },
-        "b.inggris":{
-            "10":"Mam Jelisha",
-            "11":"Mam Jelisha",
-            "12":"Mam Kris",
-        },
-        "pp":{
-            "10":"Mam Wuri",
-            "11":"Pak Erwin",
-            "12":"Pak Luhur"
-        },
-        "pai":{
-            "10":"Pak Slamet",
-            "11":"Pak Slamet",
-            "12":"Pak Marno"
-        },
-        "ipas":{
-            "10":"Pak Sigid"
-        },
-        "dtjkt":{
-            "10":"Pak Slamet"
-        },
-        "pkk":{
-            "11":"Mam Linda",
-            "12":"Mam Cantika"
-        },
-        "olahraga":{
-            "10":"Pak Suparno",
-            "11":"Pak Gatot",
-            "12":"Pak Adi"
-        }
-
-    },
-    "OTO":{
-        "matematika":{
-            "10":"Mam Wahyu",
-            "11":"Mam Santi",
-            "12":"Mam Diah"
-        },
-        "b.indonesia":{
-            "10":"Pak Ario",
-            "11":"Mam Dhita",
-            "12":"Pak Ario"
-        },
-        "b.jawa":{
-            "10":"Mam Erna"
-        },
-        "b.inggris":{
-            "10":"Mam Jelisha",
-            "11":"Mam Jelisha",
-            "12":"Mam Kris",
-        },
-        "pp":{
-            "10":"Mam Wuri",
-            "11":"Pak Erwin",
-            "12":"Pak Luhur"
-        },
-        "pai":{
-            "10":"Pak Slamet",
-            "11":"Pak Slamet",
-            "12":"Pak Marno"
-        },
-        "ipas":{
-            "10":"Pak Sigid"
-        },
-        "dtjkt":{
-            "10":"Pak Slamet"
-        },
-        "pkk":{
-            "11":"Mam Linda",
-            "12":"Mam Cantika"
-        },
-        "olahraga":{
-            "10":"Pak Suparno",
-            "11":"Pak Gatot",
-            "12":"Pak Adi"
-        }
-
-    },
-    "TM":{
-        "matematika":{
-            "10":"Mam Wahyu",
-            "11":"Mam Santi",
-            "12":"Mam Diah"
-        },
-        "b.indonesia":{
-            "10":"Pak Ario",
-            "11":"Mam Dhita",
-            "12":"Pak Ario"
-        },
-        "b.jawa":{
-            "10":"Mam Erna"
-        },
-        "b.inggris":{
-            "10":"Mam Jelisha",
-            "11":"Mam Jelisha",
-            "12":"Mam Kris",
-        },
-        "pp":{
-            "10":"Mam Wuri",
-            "11":"Pak Erwin",
-            "12":"Pak Luhur"
-        },
-        "pai":{
-            "10":"Pak Slamet",
-            "11":"Pak Slamet",
-            "12":"Pak Marno"
-        },
-        "ipas":{
-            "10":"Pak Sigid"
-        },
-        "dtjkt":{
-            "10":"Pak Slamet"
-        },
-        "pkk":{
-            "11":"Mam Linda",
-            "12":"Mam Cantika"
-        },
-        "olahraga":{
-            "10":"Pak Suparno",
-            "11":"Pak Gatot",
-            "12":"Pak Adi"
-        }
-
-    },
-    "LAS":{
-        "matematika":{
-            "10":"Mam Wahyu",
-            "11":"Mam Santi",
-            "12":"Mam Diah"
-        },
-        "b.indonesia":{
-            "10":"Pak Ario",
-            "11":"Mam Dhita",
-            "12":"Pak Ario"
-        },
-        "b.jawa":{
-            "10":"Mam Erna"
-        },
-        "b.inggris":{
-            "10":"Mam Jelisha",
-            "11":"Mam Jelisha",
-            "12":"Mam Kris",
-        },
-        "pp":{
-            "10":"Mam Wuri",
-            "11":"Pak Erwin",
-            "12":"Pak Luhur"
-        },
-        "pai":{
-            "10":"Pak Slamet",
-            "11":"Pak Slamet",
-            "12":"Pak Marno"
-        },
-        "ipas":{
-            "10":"Pak Sigid"
-        },
-        "dtjkt":{
-            "10":"Pak Slamet"
-        },
-        "pkk":{
-            "11":"Mam Linda",
-            "12":"Mam Cantika"
-        },
-        "olahraga":{
-            "10":"Pak Suparno",
-            "11":"Pak Gatot",
-            "12":"Pak Adi"
-        }
     }
 }
 
@@ -4715,11 +4718,12 @@ class ActionGetGuru(Action):
             jurusan = tracker.get_slot("jurusan")
             kelas = tracker.get_slot("kelas")
             materi = tracker.get_slot("materi")
+            guru = tracker.get_slot("key_guru")
             
-            if jurusan and kelas and materi:
-                data = guru_dictionary.get(jurusan.upper(),{}).get(materi.lower(),{}).get(str(kelas))
+            if guru and jurusan and kelas and materi:
+                data = guru_dictionary.get(guru.lower(),{}).get(jurusan.upper(),{}).get(materi.lower(),{}).get(str(kelas))
                 if data:
-                    dispatcher.utter_message(text=f"guru {materi} kelas {kelas} {jurusan} adalah {data}")
+                    dispatcher.utter_message(text=f"{guru} {materi} kelas {kelas} {jurusan} adalah {data}")
                 else:
                     dispatcher.utter_message(text=f"Di Kelas itu tidak ada pelajaran {materi} kak")
      

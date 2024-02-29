@@ -109,8 +109,11 @@ stories:
   - action: utter_greet
   - intent: tanya_guru
     entities:
+    - key_guru: guru
     - materi: matematika
     - kelas: '12'
+  - slot_was_set:
+    - key_guru: guru
   - slot_was_set:
     - kelas: '12'
   - slot_was_set:
@@ -118,9 +121,12 @@ stories:
   - action: action_get_guru
   - intent: tanya_guru
     entities:
+    - key_guru: guru
     - materi: B.Inggris
     - kelas: '12'
     - jurusan: TJKT
+  - slot_was_set:
+    - key_guru: guru
   - slot_was_set:
     - jurusan: TJKT
   - slot_was_set:
@@ -128,3 +134,27 @@ stories:
   - slot_was_set:
     - materi: B.Inggris
   - action: action_get_guru
+  - intent: terimakasih
+  - action: utter_terimakasih
+
+# - story: interactive_story_guru_tidak ada
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: tanya_guru
+#     entities:
+#     - kelas: '12'
+#     - jurusan: TJKT
+#   - slot_was_set:
+#     - jurusan: TJKT
+#   - slot_was_set:
+#     - kelas: '12'
+#   - action: action_get_guru
+#   - intent: tanya_guru
+#     entities:
+#     - materi: B.Jawa
+#   - slot_was_set:
+#     - materi: B.Jawa
+#   - action: action_get_guru
+#   - intent: terimakasih
+#   - action: utter_terimakasih
