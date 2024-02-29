@@ -87,6 +87,8 @@ stories:
   - slot_was_set:
     - materi: matematika
   - action: action_get_guru
+  - intent: terimakasih
+  - action: utter_terimakasih
 
 - story: interactive_story_jadwal
   steps:

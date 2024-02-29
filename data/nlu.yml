@@ -123,7 +123,14 @@ nlu:
   examples: |
     - siapa guru [matematika](materi) kelas [12](kelas) jurusan [tjkt](jurusan)
     - siapakah guru [PAI](materi) kelas [11](kelas) jurusan [oto](jurusan)
-    - guru [PP](materi) kelas [11](kelas) jurusan [tjkts](jurusan)
+    - guru [PP](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - guru [B.indonesia](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - guru [B.Jawa](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - guru [B.Inggris](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - guru [Olahraga](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - guru [IPAS](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - guru [PKK](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
+    - guru [DTJKT](materi) kelas [11](kelas) jurusan [tjkt](jurusan)
     - siapa guru [matematika](materi) kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}
 - synonym: TJKT
   examples: |

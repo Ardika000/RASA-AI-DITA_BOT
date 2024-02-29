@@ -91,6 +91,235 @@ guru_dictionary={
             "12":"Pak Adi"
         }
 
+    },
+    "KA":{
+        "matematika":{
+            "10":"Mam Wahyu",
+            "11":"Mam Santi",
+            "12":"Mam Diah"
+        },
+        "b.indonesia":{
+            "10":"Pak Ario",
+            "11":"Mam Dhita",
+            "12":"Pak Ario"
+        },
+        "b.jawa":{
+            "10":"Mam Erna"
+        },
+        "b.inggris":{
+            "10":"Mam Jelisha",
+            "11":"Mam Jelisha",
+            "12":"Mam Kriss",
+        },
+        "pp":{
+            "10":"Mam Wuri",
+            "11":"Pak Erwin",
+            "12":"Pak Luhur"
+        },
+        "pai":{
+            "10":"Pak Slamet",
+            "11":"Pak Slamet",
+            "12":"Pak Marno"
+        },
+        "ipas":{
+            "10":"Pak Sigid"
+        },
+        "dtjkt":{
+            "10":"Pak Slamet"
+        },
+        "pkk":{
+            "11":"Mam Linda",
+            "12":"Mam Cantika"
+        },
+        "olahraga":{
+            "10":"Pak Suparno",
+            "11":"Pak Gatot",
+            "12":"Pak Adi"
+        }
+
+    },
+    "DKV":{
+        "matematika":{
+            "10":"Mam Wahyu",
+            "11":"Mam Santi",
+            "12":"Mam Diah"
+        },
+        "b.indonesia":{
+            "10":"Pak Ario",
+            "11":"Mam Dhita",
+            "12":"Pak Ario"
+        },
+        "b.jawa":{
+            "10":"Mam Erna"
+        },
+        "b.inggris":{
+            "10":"Mam Jelisha",
+            "11":"Mam Jelisha",
+            "12":"Mam Kriss",
+        },
+        "pp":{
+            "10":"Mam Wuri",
+            "11":"Pak Erwin",
+            "12":"Pak Luhur"
+        },
+        "pai":{
+            "10":"Pak Slamet",
+            "11":"Pak Slamet",
+            "12":"Pak Marno"
+        },
+        "ipas":{
+            "10":"Pak Sigid"
+        },
+        "dtjkt":{
+            "10":"Pak Slamet"
+        },
+        "pkk":{
+            "11":"Mam Linda",
+            "12":"Mam Cantika"
+        },
+        "olahraga":{
+            "10":"Pak Suparno",
+            "11":"Pak Gatot",
+            "12":"Pak Adi"
+        }
+
+    },
+    "OTO":{
+        "matematika":{
+            "10":"Mam Wahyu",
+            "11":"Mam Santi",
+            "12":"Mam Diah"
+        },
+        "b.indonesia":{
+            "10":"Pak Ario",
+            "11":"Mam Dhita",
+            "12":"Pak Ario"
+        },
+        "b.jawa":{
+            "10":"Mam Erna"
+        },
+        "b.inggris":{
+            "10":"Mam Jelisha",
+            "11":"Mam Jelisha",
+            "12":"Mam Kriss",
+        },
+        "pp":{
+            "10":"Mam Wuri",
+            "11":"Pak Erwin",
+            "12":"Pak Luhur"
+        },
+        "pai":{
+            "10":"Pak Slamet",
+            "11":"Pak Slamet",
+            "12":"Pak Marno"
+        },
+        "ipas":{
+            "10":"Pak Sigid"
+        },
+        "dtjkt":{
+            "10":"Pak Slamet"
+        },
+        "pkk":{
+            "11":"Mam Linda",
+            "12":"Mam Cantika"
+        },
+        "olahraga":{
+            "10":"Pak Suparno",
+            "11":"Pak Gatot",
+            "12":"Pak Adi"
+        }
+
+    },
+    "TM":{
+        "matematika":{
+            "10":"Mam Wahyu",
+            "11":"Mam Santi",
+            "12":"Mam Diah"
+        },
+        "b.indonesia":{
+            "10":"Pak Ario",
+            "11":"Mam Dhita",
+            "12":"Pak Ario"
+        },
+        "b.jawa":{
+            "10":"Mam Erna"
+        },
+        "b.inggris":{
+            "10":"Mam Jelisha",
+            "11":"Mam Jelisha",
+            "12":"Mam Kriss",
+        },
+        "pp":{
+            "10":"Mam Wuri",
+            "11":"Pak Erwin",
+            "12":"Pak Luhur"
+        },
+        "pai":{
+            "10":"Pak Slamet",
+            "11":"Pak Slamet",
+            "12":"Pak Marno"
+        },
+        "ipas":{
+            "10":"Pak Sigid"
+        },
+        "dtjkt":{
+            "10":"Pak Slamet"
+        },
+        "pkk":{
+            "11":"Mam Linda",
+            "12":"Mam Cantika"
+        },
+        "olahraga":{
+            "10":"Pak Suparno",
+            "11":"Pak Gatot",
+            "12":"Pak Adi"
+        }
+
+    },
+    "LAS":{
+        "matematika":{
+            "10":"Mam Wahyu",
+            "11":"Mam Santi",
+            "12":"Mam Diah"
+        },
+        "b.indonesia":{
+            "10":"Pak Ario",
+            "11":"Mam Dhita",
+            "12":"Pak Ario"
+        },
+        "b.jawa":{
+            "10":"Mam Erna"
+        },
+        "b.inggris":{
+            "10":"Mam Jelisha",
+            "11":"Mam Jelisha",
+            "12":"Mam Kriss",
+        },
+        "pp":{
+            "10":"Mam Wuri",
+            "11":"Pak Erwin",
+            "12":"Pak Luhur"
+        },
+        "pai":{
+            "10":"Pak Slamet",
+            "11":"Pak Slamet",
+            "12":"Pak Marno"
+        },
+        "ipas":{
+            "10":"Pak Sigid"
+        },
+        "dtjkt":{
+            "10":"Pak Slamet"
+        },
+        "pkk":{
+            "11":"Mam Linda",
+            "12":"Mam Cantika"
+        },
+        "olahraga":{
+            "10":"Pak Suparno",
+            "11":"Pak Gatot",
+            "12":"Pak Adi"
+        }
     }
 }
 
@@ -4488,10 +4717,16 @@ class ActionGetGuru(Action):
             materi = tracker.get_slot("materi")
             
             if jurusan and kelas and materi:
-                data= guru_dictionary.get(jurusan.upper(),{}).get(materi.lower(),{}).get(str(kelas))
-                dispatcher.utter_message(text=f"guru {materi} kelas {kelas} {jurusan} adalah {data}")
+                data = guru_dictionary.get(jurusan.upper(),{}).get(materi.lower(),{}).get(str(kelas))
+                if data:
+                    dispatcher.utter_message(text=f"guru {materi} kelas {kelas} {jurusan} adalah {data}")
+                else:
+                    dispatcher.utter_message(text=f"Di Kelas itu tidak ada pelajaran {materi} kak")
+     
+            elif not materi:
+                dispatcher.utter_message(text=f"tolong masukkan materi yang diajar guru tersebut ya kak :)")
             else:
-                dispatcher.utter_message(text="Maaf kak sepertinya data yang kakak berikan kurang tepat,bisa ulangi lagi")
+                dispatcher.utter_message(text=f"Di Kelas itu tidak ada pelajaran {materi} kak")
 
             return []
             
