@@ -670,7 +670,7 @@ data_dictionary={
                         "ruang":"Lab Fisika"
                     }
                 },
-                "Kamis":{
+                "kamis":{
                     "1":{
                         "materi":"PIC",
                         "guru":"Pak Dimas",
@@ -722,7 +722,7 @@ data_dictionary={
                         "ruang":"Cisco E"
                     },
                 },
-                "Jumat":{
+                "jumat":{
                     "1":{
                         "materi":"B. Indonesia",
                         "guru": "Mam Dhita",
@@ -4766,8 +4766,8 @@ class ActionGetProfil(Action):
 
             if key_profil and jurusan:
                 profil = data_dictionary.get(jurusan.upper(),{}).get(key_profil.lower(),{})
-                dispatcher.utter_message(text="Baik kak, tunggu sebentar ya...")
-                dispatcher.utter_message(text=f"{profil}")
+                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\n{profil}")
+                # dispatcher.utter_message(text=f"{profil}")
             elif key_profil:
                 dispatcher.utter_message(text="Tolong masukkan jurusannya ya kak :)")
             else:
@@ -4789,8 +4789,8 @@ class ActionGetKerja(Action):
 
             if key_kerja and jurusan:
                 kerja = data_dictionary.get(jurusan.upper(),{}).get(key_kerja.lower(),{})
-                dispatcher.utter_message(text="Baik kak, tunggu sebentar ya...")
-                dispatcher.utter_message(text=f"{kerja}")
+                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\n{kerja}")
+                # dispatcher.utter_message(text=f"{kerja}")
             else:
                 dispatcher.utter_message(text=f"Tolong masukkan jurusannya ya kak :)")
             return []
@@ -4809,8 +4809,8 @@ class ActionGetMapel(Action):
 
             if key_mapel and jurusan:
                 materi = data_dictionary.get(jurusan.upper(),{}).get(key_mapel.lower(),{})
-                dispatcher.utter_message(text="Baik kak, tunggu sebentar ya...")
-                dispatcher.utter_message(text=f"{materi}")
+                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\n{materi}")
+                # dispatcher.utter_message(text=f"{materi}")
             else:
                 dispatcher.utter_message(text=f"Tolong masukkan jurusannya ya kak :)")
             return []

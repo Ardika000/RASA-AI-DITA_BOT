@@ -88,7 +88,7 @@ responses:
   utter_ask_nis:
   - text: Boleh tolong masukkan nis nya kakak dulu!
   utter_greet:
-  - text: Hay! ada yang bisa saya bantu?
+  - text: Hay! ada yang bisa DITA bantu?
     buttons:
     - title: Profil Sekolah
       payload: /tanya_profil_sekolah
