@@ -542,6 +542,7 @@ data_dictionary={
                         "ruang": "WAN"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
             "11":{
                 "senin":{
@@ -811,6 +812,7 @@ data_dictionary={
                         "ruang": "B.305"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
 
             },
             "12":{
@@ -1024,6 +1026,7 @@ data_dictionary={
                         "ruang": "WAN"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
         }
     },
@@ -1248,6 +1251,7 @@ data_dictionary={
                         "ruang": "WAN"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
             "11":{
                 "senin":{
@@ -1512,7 +1516,7 @@ data_dictionary={
                         "ruang": "LAB 3"
                     }
                 },
-
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
             "12":{
                 "senin":{
@@ -1730,6 +1734,7 @@ data_dictionary={
                         "ruang": "WAN"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
         }
     },
@@ -1954,6 +1959,7 @@ data_dictionary={
                         "ruang": "WAN"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
             "11":{
                 "senin":{
@@ -2218,6 +2224,7 @@ data_dictionary={
                         "ruang": "LAB 3"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
 
             },
             "12":{
@@ -2468,6 +2475,7 @@ data_dictionary={
                         "ruang": "Lapangan"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
         }
     },
@@ -2692,6 +2700,7 @@ data_dictionary={
                         "ruang": "WAN"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
             "11":{
                 "senin":{
@@ -2966,7 +2975,7 @@ data_dictionary={
                         "ruang": "D.303"
                     }
                 },
-
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
             "12":{
                 "senin":{
@@ -3184,6 +3193,7 @@ data_dictionary={
                         "ruang": "Bengkel Otomotif"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
         }
     },
@@ -3408,6 +3418,7 @@ data_dictionary={
                         "ruang": "WAN"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
             "11":{
                 "senin":{
@@ -3682,7 +3693,7 @@ data_dictionary={
                         "ruang": "D.303"
                     }
                 },
-
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
             "12":{
                 "senin":{
@@ -3900,6 +3911,7 @@ data_dictionary={
                         "ruang": "Bengkel Otomotif"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
         }
     },
@@ -4124,6 +4136,7 @@ data_dictionary={
                         "ruang": "WAN"
                     }
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
             "11":{
                 "senin":{
@@ -4398,7 +4411,7 @@ data_dictionary={
                         "ruang": "D.303"
                     }
                 },
-
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
             "12":{
                 "senin":{
@@ -4678,6 +4691,7 @@ data_dictionary={
                         "ruang": "AREA XII SMAW"
                     },
                 },
+                "minggu":{"Ini hari minggu lho kak, yakali masuk rugi dong! :)"}
             },
         }
     },
@@ -4700,16 +4714,29 @@ class ActionGetGuru(Action):
             if guru and jurusan and kelas and materi:
                 data = guru_dictionary.get(guru.lower(),{}).get(jurusan.upper(),{}).get(materi.lower(),{}).get(str(kelas))
                 if data:
-                    dispatcher.utter_message(text=f"{guru} {materi} kelas {kelas} {jurusan} adalah {data}")
+                    dispatcher.utter_message(text=f"{guru} {materi} kelas {kelas} {jurusan} adalah {data}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
                 else:
                     dispatcher.utter_message(text=f"Di Kelas itu tidak ada pelajaran {materi} kak")
      
             elif not materi:
                 dispatcher.utter_message(text=f"tolong masukkan materi yang diajar guru tersebut ya kak :)")
             else:
-                dispatcher.utter_message(text=f"Tolong masukkan lagi materi yang diajar kelas dan jurusannya juga ya kak :)")
+                dispatcher.utter_message(text=f"Tolong masukkan materi yang diajar, kelas dan jurusannya juga ya kak :)")
             return []
-            
+
+class ActionGreet(Action):
+    def name(self) -> Text:
+        return "action_greet"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        nama = tracker.get_slot("nama")
+        if (nama):
+            dispatcher.utter_message(text=f"Hay kak {nama}! ada yang bisa DITA bantu?")
+        else:
+            dispatcher.utter_message(text=f"Hay! ada yang bisa DITA bantu?")
 
 class ActionGetJadwal(Action):
     def name(self) -> Text:
@@ -4730,23 +4757,29 @@ class ActionGetJadwal(Action):
         if key_jadwal and hari and jurusan and kelas:
             jadwal_kelas = data_dictionary.get(jurusan.upper(),{}).get(key_jadwal.lower(),{}).get(str(kelas),{}).get(hari.lower(),{})
             if jadwal_kelas:
-                pesan = f"DITA kasih tau ya kak jadwal hari {hari} kelas {kelas} jurusan {jurusan} yaitu:\n"
-                for jam, info in jadwal_kelas.items():
-                    pesan += f"Jam ke-{jam}: materi {info['materi']} dengan guru {info['guru']} di ruang {info['ruang']}\n"
-                dispatcher.utter_message(pesan)
+                if hari != "minggu":
+                    pesan = f"DITA kasih tau ya kak jadwal hari {hari} kelas {kelas} jurusan {jurusan} yaitu:\b"
+                    for jam, info in jadwal_kelas.items():
+                        pesan += f"Jam ke-{jam}: materi {info['materi']} dengan guru {info['guru']} di ruang {info['ruang']}\n"
+                    dispatcher.utter_message(text=pesan+"\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
+                else:
+                    dispatcher.utter_message(text="Ini hari minggu loh kak, yakali masuk rugi dong! :)")
             else:
                 dispatcher.utter_message("Kelas ini sedang libur kak :)")
         elif key_jadwal and jurusan and kelas:
             jadwal_hari_ini = data_dictionary.get(jurusan.upper()).get("jadwal",{}).get(str(kelas),{}).get(hari_ini.lower(),{})
 
             if jadwal_hari_ini:
-                message=f"DITA kasih tau ya kak jadwal hari ini kelas {kelas} jurusan {jurusan} yaitu:\n"
-                for jam, info in jadwal_hari_ini.items():
-                    materi = info.get('materi','')
-                    guru = info.get('guru', '')
-                    ruang = info.get('ruang', '')
-                    message += f"Jam {jam}: materi {materi},guru {guru},ruang {ruang}\n"
-                dispatcher.utter_message(text=message)
+                if hari_ini != "minggu":
+                    message=f"DITA kasih tau ya kak jadwal hari ini kelas {kelas} jurusan {jurusan} yaitu:\b"
+                    for jam, info in jadwal_hari_ini.items():
+                        materi = info.get('materi','')
+                        guru = info.get('guru', '')
+                        ruang = info.get('ruang', '')
+                        message += f"Jam {jam}: materi {materi},guru {guru},ruang {ruang}\n"
+                    dispatcher.utter_message(text=message+"\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
+                else:
+                    dispatcher.utter_message(text="Ini hari minggu loh kak, yakali masuk rugi dong! :)")
             else:
                 dispatcher.utter_message(text="kelas tersebut sedang libur kak :)")
         else:
@@ -4766,7 +4799,7 @@ class ActionGetProfil(Action):
 
             if key_profil and jurusan:
                 profil = data_dictionary.get(jurusan.upper(),{}).get(key_profil.lower(),{})
-                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\n{profil}")
+                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\bBerikut profil jurusan {jurusan} yang berhasil DITA rangkum kak :\b{profil}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
                 # dispatcher.utter_message(text=f"{profil}")
             elif key_profil:
                 dispatcher.utter_message(text="Tolong masukkan jurusannya ya kak :)")
@@ -4789,7 +4822,7 @@ class ActionGetKerja(Action):
 
             if key_kerja and jurusan:
                 kerja = data_dictionary.get(jurusan.upper(),{}).get(key_kerja.lower(),{})
-                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\n{kerja}")
+                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\bBerikut ini peluang kerja yang dapat kakak coba jika bergabung ke jurusan {jurusan} SMK Tunas Harapan Pati :\b{kerja}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
                 # dispatcher.utter_message(text=f"{kerja}")
             else:
                 dispatcher.utter_message(text=f"Tolong masukkan jurusannya ya kak :)")
@@ -4809,7 +4842,7 @@ class ActionGetMapel(Action):
 
             if key_mapel and jurusan:
                 materi = data_dictionary.get(jurusan.upper(),{}).get(key_mapel.lower(),{})
-                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\n{materi}")
+                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\bBerikut ini materi yang akan kakak pelajari di jurusan {jurusan} :\b{materi}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
                 # dispatcher.utter_message(text=f"{materi}")
             else:
                 dispatcher.utter_message(text=f"Tolong masukkan jurusannya ya kak :)")
@@ -4824,7 +4857,7 @@ class ActionGetProfilSekolah(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
             profil_sekolah = data_dictionary.get("profil_sekolah")
-            dispatcher.utter_message(text=f"{profil_sekolah}")
+            dispatcher.utter_message(text=f"Baik kak, berikut profil SMK Tunas Harapan Pati :\b{profil_sekolah}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
             return []
 
 class ActionGetProdukSekolah(Action):
@@ -4836,7 +4869,7 @@ class ActionGetProdukSekolah(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
             produk_sekolah = data_dictionary.get("produk")
-            dispatcher.utter_message(text=f"{produk_sekolah}")
+            dispatcher.utter_message(text=f"Baik kak, berikut ini adalah produk teaching factory di setiap jurusan di SMK Tunas Harapan Pati :\b{produk_sekolah}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
             return []
 
 # class ActionDefaultFallback(Action):

@@ -26,10 +26,91 @@ nlu:
     - matursuwun
     - terimakasih
     - terima kasih
+- intent: tanya_nama
+  examples: |
+    - [ardika](nama)
+    - [azhar](nama)
+    - [azka](nama)
+    - [arnia](nama)
+    - [adel](nama)
+    - [dela](nama)
+    - [danela](nama)
+    - [azzahra](nama)
+    - [zahra](nama)
+    - [balqis](nama)
+    - [Sakinah](nama)
+    - [dika](nama)
+    - [rangga](nama)
+    - [fizi](nama)
+    - [mail](nama)
+    - [zaki](nama)
+    - [rahmat](nama)
+    - [noval](nama)
+    - [vivi](nama)
+    - [lala](nama)
+    - [nova](nama)
+    - [dona](nama)
+    - [eka](nama)
+    - [fahmi](nama)
+    - [fahri](nama)
+    - [freya](nama)
+    - [gina](nama)
+    - [hana](nama)
+    - [ivana](nama)
+    - [indri](nama)
+    - [irsyad](nama)
+    - [joko](nama)
+    - kak [johan](nama)
+    - kak [rayhan](nama)
+    - kak [rendy](nama)
+    - kak [siti](nama)
+    - kak [krisna](nama)
+    - [kiki](nama)
+    - [karto](nama)
+    - [linda](nama)
+    - [mona](nama)
+    - [monik](nama)
+    - [nabila](nama)
+    - [nana](nama)
+    - [ozil](nama)
+    - [obama](nama)
+    - [priska](nama)
+    - [pricillia](nama)
+    - [piter](nama)
+    - [rasya](nama)
+    - [rahma](nama)
+    - [santi](nama)
+    - [saka](nama)
+    - [sandra](nama)
+    - [surya](nama)
+    - [tio](nama)
+    - [tati](nama) 
+    - [rudi](nama) 
+    - [taufik](nama)
+    - [umay](nama)
+    - [wiliam](nama)
+    - [wily](nama)
+    - [wilson](nama)
+    - [wawan](nama)
+    - [yanti](nama)
+    - [yeremia](nama)
+    - [vianka](nama)
+    - [vivian](nama)
+    - [zack](nama)
+    - [andro](nama)
+    - nama saya [ardi](nama)
 - intent: konfirmasi
   examples: |
     - ada
     - ya
+- intent: tanya_menu
+  examples: |
+    - menu
+    - tampilkan menunya dong kak
+    - tadi pulihannya apa aja ya kak
+    - menunya tadi apa aja ya
+    - menu kak
+    - show menu
 - intent: goodbye
   examples: |
     - cu
@@ -60,9 +141,12 @@ nlu:
     - Saya ingin tanya [jadwal](key_jadwal) hari [kamis](hari) jurusan [BCPF](jurusan) kelas [11](kelas)
     - Saya ingin tanya [jadwal](key_jadwal) hari [jumat](hari) jurusan [TM](jurusan) kelas [10](kelas)
     - Saya ingin tanya [jadwal](key_jadwal) hari [sabtu](hari) jurusan [LAS](jurusan) kelas [10](kelas)
+    - Saya ingin tanya [jadwal](key_jadwal) hari [minggu](hari) jurusan [LAS](jurusan) kelas [10](kelas)
     - tanya [jadwal](key_jadwal) hari [senin](hari) jurusan [TJKT](jurusan) kelas [12](kelas)
     - [jadwal](key_jadwal) jurusan [TM](jurusan) kelas [10](kelas) hari [selasa](hari)
+    - [jadwal](key_jadwal) jurusan [TM](jurusan) kelas [10](kelas) hari [minggu](hari)
     - [jadwal](key_jadwal) jurusan [KA](jurusan) kelas [10](kelas) hari [selasa](hari)
+    - jurusan [oto](jurusan) kelas [11](kelas)
     - jurusan [oto](jurusan) kelas [11](kelas)
     - kelas [11](kelas) jurusan [oto](jurusan)
     - kelas [12](kelas) jurusan [tjkt]{"entity": "jurusan", "value": "TJKT"}

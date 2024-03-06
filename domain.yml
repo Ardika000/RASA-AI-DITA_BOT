@@ -17,6 +17,8 @@ intents:
 - tanya_profil
 - tanya_profil_sekolah
 - terimakasih
+- tanya_nama
+- tanya_menu
 entities:
 - jurusan
 - materi
@@ -27,6 +29,7 @@ entities:
 - hari
 - key_mapel
 - key_guru
+- nama
 slots:
   hari:
     type: text
@@ -82,13 +85,36 @@ slots:
     mappings:
     - type: from_entity
       entity: materi
+  nama:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: nama
 responses:
   utter_terimakasih:
   - text: Sama-sama kak, semoga membantu ya :)
   utter_ask_nis:
   - text: Boleh tolong masukkan nis nya kakak dulu!
+  utter_tanya_nama:
+  - text: Sebelum mulai DITA panggil kakak siapa ya?
   utter_greet:
-  - text: Hay! ada yang bisa DITA bantu?
+  - text: Hay kak {nama}! ada yang bisa DITA bantu?
+    buttons:
+    - title: Profil Sekolah
+      payload: /tanya_profil_sekolah
+    - title: Jadwal Sekolah
+      payload: /tanya_jadwal{{"key_jadwal":"jadwal"}}
+    - title: Kerjasama Industri & Prospek Kerja Lulusan
+      payload: /tanya_kerja{{"key_kerja":"kerja"}}
+    - title: Materi Yang Diajar Pada Jurusan
+      payload: /tanya_mapel{{"key_mapel":"materi"}}
+    - title: Profil Jurusan
+      payload: /tanya_profil{{ "key_profil":"profil" }}
+    - title: Produk Teaching Factory
+      payload: /tanya_produk
+  utter_tanya_menu:
+  - text: Ini dia beberapa pilahan menu untuk membantu kakak bertanya :)
     buttons:
     - title: Profil Sekolah
       payload: /tanya_profil_sekolah
@@ -129,3 +155,4 @@ actions:
 - action_informasi_jadwal
 - action_profil_sekolah
 - action_produk_sekolah
+- action_greet
