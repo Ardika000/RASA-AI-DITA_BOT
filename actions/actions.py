@@ -4714,7 +4714,7 @@ class ActionGetGuru(Action):
             if guru and jurusan and kelas and materi:
                 data = guru_dictionary.get(guru.lower(),{}).get(jurusan.upper(),{}).get(materi.lower(),{}).get(str(kelas))
                 if data:
-                    dispatcher.utter_message(text=f"{guru} {materi} kelas {kelas} {jurusan} adalah {data}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
+                    dispatcher.utter_message(text=f"{guru} {materi} kelas {kelas} {jurusan} adalah {data}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi. Atau kalau mau tanya guru lain cukup ketik aja *contoh: 'cari guru matematika kelas 12 TJKT' :)")
                 else:
                     dispatcher.utter_message(text=f"Di Kelas itu tidak ada pelajaran {materi} kak")
      
@@ -4761,7 +4761,7 @@ class ActionGetJadwal(Action):
                     pesan = f"DITA kasih tau ya kak jadwal hari {hari} kelas {kelas} jurusan {jurusan} yaitu:\b"
                     for jam, info in jadwal_kelas.items():
                         pesan += f"Jam ke-{jam}: materi {info['materi']} dengan guru {info['guru']} di ruang {info['ruang']}\n"
-                    dispatcher.utter_message(text=pesan+"\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
+                    dispatcher.utter_message(text=pesan+"\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi. Atau kalau mau lihat jadwal lain cukup ketik aja *contoh: 'cari jadwal hari selasa kelas 12 OTO' :)")
                 else:
                     dispatcher.utter_message(text="Ini hari minggu loh kak, yakali masuk rugi dong! :)")
             else:
@@ -4776,8 +4776,8 @@ class ActionGetJadwal(Action):
                         materi = info.get('materi','')
                         guru = info.get('guru', '')
                         ruang = info.get('ruang', '')
-                        message += f"Jam {jam}: materi {materi},guru {guru},ruang {ruang}\n"
-                    dispatcher.utter_message(text=message+"\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
+                        message += f"Jam ke-{jam}: materi {materi},guru {guru},ruang {ruang}\n"
+                    dispatcher.utter_message(text=message+"\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi. Atau kalau mau lihat jadwal lain cukup ketik aja *contoh: 'cari jadwal hari selasa kelas 12 OTO' :)")
                 else:
                     dispatcher.utter_message(text="Ini hari minggu loh kak, yakali masuk rugi dong! :)")
             else:
@@ -4799,7 +4799,7 @@ class ActionGetProfil(Action):
 
             if key_profil and jurusan:
                 profil = data_dictionary.get(jurusan.upper(),{}).get(key_profil.lower(),{})
-                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\bBerikut profil jurusan {jurusan} yang berhasil DITA rangkum kak :\b{profil}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
+                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\bBerikut profil jurusan {jurusan} yang berhasil DITA rangkum kak :\b{profil}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi. Atau kalau mau tau profil jurusan lain cukup ketik aja *contoh: 'cari profil jurusan TM' :)")
                 # dispatcher.utter_message(text=f"{profil}")
             elif key_profil:
                 dispatcher.utter_message(text="Tolong masukkan jurusannya ya kak :)")
@@ -4822,7 +4822,7 @@ class ActionGetKerja(Action):
 
             if key_kerja and jurusan:
                 kerja = data_dictionary.get(jurusan.upper(),{}).get(key_kerja.lower(),{})
-                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\bBerikut ini peluang kerja yang dapat kakak coba jika bergabung ke jurusan {jurusan} SMK Tunas Harapan Pati :\b{kerja}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
+                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\bBerikut ini peluang kerja yang dapat kakak coba jika bergabung ke jurusan {jurusan} SMK Tunas Harapan Pati :\b{kerja}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi. Atau kalau mau tau peluang kerja yang dimiliki jurusan lain cukup ketik aja *contoh: 'peluang kerja jurusan LAS' :)")
                 # dispatcher.utter_message(text=f"{kerja}")
             else:
                 dispatcher.utter_message(text=f"Tolong masukkan jurusannya ya kak :)")
@@ -4842,7 +4842,7 @@ class ActionGetMapel(Action):
 
             if key_mapel and jurusan:
                 materi = data_dictionary.get(jurusan.upper(),{}).get(key_mapel.lower(),{})
-                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\bBerikut ini materi yang akan kakak pelajari di jurusan {jurusan} :\b{materi}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi :)")
+                dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\bBerikut ini materi yang akan kakak pelajari di jurusan {jurusan} :\b{materi}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi. Atau kalau mau tau materi produktif yang dipelajari jurusan lain cukup ketik aja *contoh: 'materi jurusan KA' :)")
                 # dispatcher.utter_message(text=f"{materi}")
             else:
                 dispatcher.utter_message(text=f"Tolong masukkan jurusannya ya kak :)")
