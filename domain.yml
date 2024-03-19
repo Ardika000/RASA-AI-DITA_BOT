@@ -19,6 +19,7 @@ intents:
 - terimakasih
 - tanya_nama
 - tanya_menu
+- start
 entities:
 - jurusan
 - materi
@@ -92,6 +93,8 @@ slots:
     - type: from_entity
       entity: nama
 responses:
+  utter_start:
+  - text: Selamat datang di DITA BOT kak! Silahkan ketik 'hay' untuk mulai berbicara dengan DITA :)
   utter_terimakasih:
   - text: Sama-sama kak, semoga membantu ya :)
   utter_ask_nis:
@@ -139,6 +142,19 @@ responses:
   - text: Bye
   utter_tanya_perlu:
   - text: Apa yang diperlukan ya kak?
+    buttons:
+      - title: Profil Sekolah
+        payload: /tanya_profil_sekolah
+      - title: Jadwal Sekolah
+        payload: /tanya_jadwal{{"key_jadwal":"jadwal"}}
+      - title: Kerjasama Industri & Prospek Kerja Lulusan
+        payload: /tanya_kerja{{"key_kerja":"kerja"}}
+      - title: Materi Yang Diajar Pada Jurusan
+        payload: /tanya_mapel{{"key_mapel":"materi"}}
+      - title: Profil Jurusan
+        payload: /tanya_profil{{ "key_profil":"profil" }}
+      - title: Produk Teaching Factory
+        payload: /tanya_produk
   utter_iamabot:
   - text: Saya adalah DITA(Assistent Digital Tunas Harapan Pati), saya akan membantu untuk menjawab pertanyaan yang kakak ajukan :)
 session_config:

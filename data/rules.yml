@@ -11,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: handling telegram
+  steps:
+  - intent: start
+  - action: utter_start

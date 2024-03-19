@@ -62,6 +62,20 @@ nlu:
     - [dona](nama)
     - [eka](nama)
     - [fahmi](nama)
+    - [Yakub](nama)
+    - [zohan](nama)
+    - [aris](nama)
+    - [mongkle](nama)
+    - [solikin](nama)
+    - [piter](nama)
+    - [puan](nama)
+    - [megawati](nama)
+    - [wahyu](nama)
+    - [rohid](nama)
+    - [pribadi](nama)
+    - [farrel](nama)
+    - [Taufik](nama)
+    - [Tyo](nama)
     - [fahri](nama)
     - [freya](nama)
     - [gina](nama)
@@ -121,6 +135,12 @@ nlu:
     - menunya tadi apa aja ya
     - menu kak
     - show menu
+- intent: start
+  examples: |
+    - /start
+    - start
+    - mulai
+    - Start
 - intent: goodbye
   examples: |
     - cu
