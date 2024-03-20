@@ -79,7 +79,7 @@ stories:
   - slot_was_set:
     - key_kerja: kerja
   - action: action_get_kerja
-  - intent: tanya_profil
+  - intent: jurusan_tanya
     entities:
     - jurusan: TJKT
   - slot_was_set:
@@ -106,7 +106,7 @@ stories:
   - slot_was_set:
     - key_mapel: materi
   - action: action_get_mapel
-  - intent: tanya_profil
+  - intent: jurusan_tanya
     entities:
     - jurusan: TJKT
   - slot_was_set:
@@ -133,7 +133,7 @@ stories:
   - slot_was_set:
     - key_profil: profil
   - action: action_get_profil
-  - intent: tanya_profil
+  - intent: jurusan_tanya
     entities:
     - jurusan: TJKT
   - slot_was_set:

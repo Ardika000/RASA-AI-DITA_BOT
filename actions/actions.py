@@ -14,7 +14,9 @@ from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import EventType
 from rasa_sdk.types import DomainDict
 from datetime import datetime
+# from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 import locale
+# import json
 
 def set_locale_to_indonesian():
     try:
@@ -4783,7 +4785,7 @@ class ActionGetJadwal(Action):
             else:
                 dispatcher.utter_message(text="kelas tersebut sedang libur kak :)")
         else:
-            dispatcher.utter_message(text="tolong masukkan kelas dan jurusannya ya kak :)")
+            dispatcher.utter_message(template="utter_masukkan_kelas_jurusan")
         return []
 
 class ActionGetProfil(Action):
@@ -4802,7 +4804,7 @@ class ActionGetProfil(Action):
                 dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\bBerikut profil jurusan {jurusan} yang berhasil DITA rangkum kak :\b{profil}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi. Atau kalau mau tau profil jurusan lain cukup ketik aja *contoh: 'cari profil jurusan TM' :)")
                 # dispatcher.utter_message(text=f"{profil}")
             elif key_profil:
-                dispatcher.utter_message(text="Tolong masukkan jurusannya ya kak :)")
+                dispatcher.utter_message(template="utter_masukkan_jurusan")
             else:
                 dispatcher.utter_message(text="Maaf kak, DITA masih tahap pengembangan jadi belum bisa tau profil semua jurusan dan tolong pastikan kak penggunaan singkatan dengan huruf besar")
 
@@ -4825,7 +4827,20 @@ class ActionGetKerja(Action):
                 dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\bBerikut ini peluang kerja yang dapat kakak coba jika bergabung ke jurusan {jurusan} SMK Tunas Harapan Pati :\b{kerja}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi. Atau kalau mau tau peluang kerja yang dimiliki jurusan lain cukup ketik aja *contoh: 'peluang kerja jurusan LAS' :)")
                 # dispatcher.utter_message(text=f"{kerja}")
             else:
-                dispatcher.utter_message(text=f"Tolong masukkan jurusannya ya kak :)")
+                # buttons = [
+                #     {"text": "TJKT (Teknik Jaringan Komputer dan Telekomunikasi)", "callback_data": "TJKT"},
+                #     {"text": "OTO (Otomotif)", "callback_data": "OTO"},
+                #     {"text": "DKV (Desain Komunikasi Visual)", "callback_data": "DKV"},
+                #     {"text": "TM (Teknik Mesin)", "callback_data": "TM"},
+                #     {"text": "KA (Kimia Analis)", "callback_data": "KA"},
+                #     {"text": "LAS (Teknik Las)", "callback_data": "LAS"}
+                # ]
+                # keyboard = {"inline_keyboard": [[{"text": button["text"], "callback_data": button["callback_data"]}] for button in buttons]}
+                # reply_markup = json.dumps(keyboard)
+
+                # print(reply_markup)
+                # dispatcher.utter_message(response="utter_masukkan_jurusan", reply_markup=reply_markup)
+                dispatcher.utter_message(response="utter_masukkan_jurusan")
             return []
 
 
@@ -4845,7 +4860,7 @@ class ActionGetMapel(Action):
                 dispatcher.utter_message(text=f"Baik kak, tunggu sebentar ya...\bBerikut ini materi yang akan kakak pelajari di jurusan {jurusan} :\b{materi}\bapakah ada yang ingin kakak tanyakan lagi? jika ada cukup ketik 'menu' aja untuk munculin pilihan tadi. Atau kalau mau tau materi produktif yang dipelajari jurusan lain cukup ketik aja *contoh: 'materi jurusan KA' :)")
                 # dispatcher.utter_message(text=f"{materi}")
             else:
-                dispatcher.utter_message(text=f"Tolong masukkan jurusannya ya kak :)")
+                dispatcher.utter_message(template="utter_masukkan_jurusan")
             return []
 
 class ActionGetProfilSekolah(Action):

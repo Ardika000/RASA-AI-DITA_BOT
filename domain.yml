@@ -20,6 +20,7 @@ intents:
 - tanya_nama
 - tanya_menu
 - start
+- jurusan_tanya
 entities:
 - jurusan
 - materi
@@ -93,6 +94,62 @@ slots:
     - type: from_entity
       entity: nama
 responses:
+  utter_masukkan_jurusan:
+  - text: Tolong masukkan jurusannya ya kak :)
+    buttons:
+    - title: TJKT (Teknik Jaringan Komputer dan Telekomunikasi)
+      payload: /jurusan_tanya{{ "jurusan":"TJKT" }}
+    - title: OTO (Otomotif)
+      payload: /jurusan_tanya{{ "jurusan":"OTO" }}
+    - title: DKV (Desain Komunikasi Visual)
+      payload: /jurusan_tanya{{ "jurusan":"DKV" }}
+    - title: TM (Teknik Mesin)
+      payload: /jurusan_tanya{{ "jurusan":"TM" }}
+    - title: LAS (Teknik Las)
+      payload: /jurusan_tanya{{ "jurusan":"LAS" }}
+    - title: KA (Kimia Analis)
+      payload: /jurusan_tanya{{ "jurusan":"KA" }}
+    button_type: vertical
+  utter_masukkan_kelas_jurusan:
+  - text: tolong masukkan kelas dan jurusannya ya kak :)
+    buttons:
+    - title: 10 TJKT (Teknik Jaringan Komputer dan Telekomunikasi)
+      payload: /jurusan_tanya{{ "kelas":"10","jurusan":"TJKT" }}
+    - title: 11 TJKT (Teknik Jaringan Komputer dan Telekomunikasi)
+      payload: /jurusan_tanya{{ "kelas":"11","jurusan":"TJKT" }}
+    - title: 12 TJKT (Teknik Jaringan Komputer dan Telekomunikasi)
+      payload: /jurusan_tanya{{ "kelas":"12","jurusan":"TJKT" }}
+    - title: 10 OTO (Otomotif)
+      payload: /jurusan_tanya{{ "kelas":"10","jurusan":"OTO" }}
+    - title: 11 OTO (Otomotif)
+      payload: /jurusan_tanya{{ "kelas":"11","jurusan":"OTO" }}
+    - title: 12 OTO (Otomotif)
+      payload: /jurusan_tanya{{ "kelas":"12","jurusan":"OTO" }}
+    - title: 10 DKV (Desain Komunikasi Visual)
+      payload: /jurusan_tanya{{ "kelas":"10","jurusan":"DKV" }}
+    - title: 11 DKV (Desain Komunikasi Visual)
+      payload: /jurusan_tanya{{ "kelas":"11","jurusan":"DKV" }}
+    - title: 12 DKV (Desain Komunikasi Visual)
+      payload: /jurusan_tanya{{ "kelas":"12","jurusan":"DKV" }}
+    - title: 10 TM (Teknik Mesin)
+      payload: /jurusan_tanya{{ "kelas":"10","jurusan":"TM" }}
+    - title: 11 TM (Teknik Mesin)
+      payload: /jurusan_tanya{{ "kelas":"11","jurusan":"TM" }}
+    - title: 12 TM (Teknik Mesin)
+      payload: /jurusan_tanya{{ "kelas":"12","jurusan":"TM" }}
+    - title: 10 LAS (Teknik Las)
+      payload: /jurusan_tanya{{ "kelas":"10","jurusan":"LAS" }}
+    - title: 11 LAS (Teknik Las)
+      payload: /jurusan_tanya{{ "kelas":"11","jurusan":"LAS" }}
+    - title: 12 LAS (Teknik Las)
+      payload: /jurusan_tanya{{ "kelas":"12","jurusan":"LAS" }}
+    - title: 10 KA (Kimia Analis)
+      payload: /jurusan_tanya{{ "kelas":"10","jurusan":"KA" }}
+    - title: 11 KA (Kimia Analis)
+      payload: /jurusan_tanya{{ "kelas":"11","jurusan":"KA" }}
+    - title: 12 KA (Kimia Analis)
+      payload: /jurusan_tanya{{ "kelas":"12","jurusan":"KA" }}
+    button_type: vertical
   utter_start:
   - text: Selamat datang di DITA BOT kak! Silahkan ketik 'hay' untuk mulai berbicara dengan DITA :)
   utter_terimakasih:
@@ -116,6 +173,7 @@ responses:
       payload: /tanya_profil{{ "key_profil":"profil" }}
     - title: Produk Teaching Factory
       payload: /tanya_produk
+    button_type: vertical
   utter_tanya_menu:
   - text: Ini dia beberapa pilahan menu untuk membantu kakak bertanya :)
     buttons:
@@ -131,6 +189,7 @@ responses:
       payload: /tanya_profil{{ "key_profil":"profil" }}
     - title: Produk Teaching Factory
       payload: /tanya_produk
+    button_type: vertical
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg
@@ -155,6 +214,7 @@ responses:
         payload: /tanya_profil{{ "key_profil":"profil" }}
       - title: Produk Teaching Factory
         payload: /tanya_produk
+    button_type: vertical
   utter_iamabot:
   - text: Saya adalah DITA(Assistent Digital Tunas Harapan Pati), saya akan membantu untuk menjawab pertanyaan yang kakak ajukan :)
 session_config:

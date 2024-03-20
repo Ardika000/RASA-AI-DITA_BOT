@@ -163,6 +163,20 @@ nlu:
     - kamu siapa?
     - kamu itu apa?
     - apa kamu bot?
+- intent: jurusan_tanya
+  examples: |
+    - [TJKT](jurusan)
+    - [OTO](jurusan)
+    - [LAS](jurusan)
+    - [TM](jurusan)
+    - [DKV](jurusan)
+    - [KA](jurusan)
+    - [tjkt](jurusan)
+    - [las](jurusan)
+    - [oto](jurusan)
+    - [ka](jurusan)
+    - [tm](jurusan)
+    - [dkv](jurusan)
 - intent: tanya_jadwal
   examples: |
     - Saya ingin tanya [jadwal](key_jadwal) hari [senin](hari) jurusan [TJKT](jurusan) kelas [12](kelas)
